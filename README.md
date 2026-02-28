@@ -4,7 +4,7 @@
 
 NLP Nexus is a powerful Natural Language Processing (NLP) web application designed to streamline text analysis and document summarization. It enables users to generate summaries, perform sentiment analysis, and visualize textual insights with ease.
 
-Built using \*\*Flask + SpaCy + NLTK + TextBlob + Scikit-Learn\*\*, this project demonstrates applied NLP concepts in a practical, interactive format.
+Built using **Flask + SpaCy + NLTK + TextBlob + Scikit-Learn**, this project demonstrates applied NLP concepts in a practical, interactive format.
 
 ## 🚀 Features
 
