@@ -1,6 +1,6 @@
-spacy>=3.5,<3.8
-nltk>=3.8
 flask>=2.3
+spacy==3.7.2
+nltk>=3.8
 textblob>=0.17
 numpy>=1.23,<2.0
 scikit-learn>=1.2
