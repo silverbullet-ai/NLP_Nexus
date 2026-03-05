@@ -12,6 +12,11 @@ import os
 
 
 def text_summarize(text, num_sentences=3):
+    """
+    Generate an extractive summary of the input text
+    using word frequency scoring.
+    """
+
     sentences = sent_tokenize(text)
 
     words = word_tokenize(text.lower())
@@ -20,7 +25,8 @@ def text_summarize(text, num_sentences=3):
     words = [word for word in words if word.isalnum() and word not in stop_words]
 
     frequency_dist = FreqDist(words)
-    max_freq = max(frequency_dist.values())
+
+    max_freq = max(frequency_dist.values()) if frequency_dist else 1
 
     sentence_scores = {}
 
@@ -33,7 +39,9 @@ def text_summarize(text, num_sentences=3):
                     sentence_scores[sentence] = frequency_dist[word] / max_freq
 
     summary_sentences = sorted(
-        sentence_scores, key=sentence_scores.get, reverse=True
+        sentence_scores,
+        key=sentence_scores.get,
+        reverse=True
     )[:num_sentences]
 
     summary = TreebankWordDetokenizer().detokenize(summary_sentences)
@@ -42,10 +50,14 @@ def text_summarize(text, num_sentences=3):
 
 
 def sentiment_analysis(text):
-    analysis = TextBlob(text)
-    sentiment = SentimentIntensityAnalyzer()
+    """
+    Perform sentiment analysis using TextBlob and VADER.
+    """
 
-    vader_scores = sentiment.polarity_scores(text)
+    analysis = TextBlob(text)
+    vader = SentimentIntensityAnalyzer()
+
+    vader_scores = vader.polarity_scores(text)
 
     if analysis.sentiment.polarity > 0:
         result = "Positive"
@@ -58,8 +70,14 @@ def sentiment_analysis(text):
 
 
 def word_cloud(text, filename):
+    """
+    Generate and save a word cloud image from text.
+    """
 
-    os.makedirs("static/images", exist_ok=True)
+    base_dir = os.path.dirname(__file__)
+    image_dir = os.path.join(base_dir, "static", "images")
+
+    os.makedirs(image_dir, exist_ok=True)
 
     wordcloud = WordCloud(
         width=800,
@@ -72,7 +90,7 @@ def word_cloud(text, filename):
     plt.axis("off")
     plt.title("Word Cloud")
 
-    file_path = f"static/images/{filename}"
+    file_path = os.path.join(image_dir, filename)
 
     plt.savefig(file_path)
     plt.close()
