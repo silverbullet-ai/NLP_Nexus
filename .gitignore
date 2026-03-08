@@ -6,7 +6,7 @@ __pycache__/
 venv/
 
 # Generated word cloud images
-src/static/images/*.png
+src/static/images/wordcloud.png
 
 # OS files
 .DS_Store
