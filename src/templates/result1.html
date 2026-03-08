@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>NLP Nexus - Result</title>
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icons.png') }}">
+    <meta charset="UTF-8">
+    <title>NLP Nexus - Word Cloud</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons.jpg') }}">
 </head>
-    <header>
-        <h1 style="font-family: Arial;">Welcome to NLP Nexus</h1>
-    </header>
-    <body>
-        <br>
-        <div class="answer">
-        
-        <img src="/static/images/wordcloud.png" style="display: block; margin: 0 auto; border-radius: 10px; min-width:400px; min-height: 250px;">
-        </div>
-        <footer>
-            <p>&copy; 2024  NLP Nexus</p>
-        </footer>
-    </body>
+
+<body>
+
+<header>
+    <h1>Welcome to NLP Nexus</h1>
+</header>
+
+<br>
+
+<div class="answer">
+
+    <img 
+        src="{{ url_for('static', filename='images/wordcloud.png') }}"
+        style="display:block; margin:0 auto; border-radius:10px; min-width:400px; min-height:250px;"
+    >
+
+</div>
+
+<footer>
+    <p>&copy; 2026 NLP Nexus</p>
+</footer>
+
+</body>
 </html>
