@@ -1,125 +1,106 @@
+/* Reset spacing */
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
+
+
+/* Background */
+
 body {
-    background-image: url(bg.jpg);
+    background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+
     font-family: Arial, sans-serif;
+
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    min-height: 97vh;
-    position: relative;
-    max-width: 98.5%;
-    color: white;
-    border: 1% solid black;
-}
-.answer {
-    border: 5px solid white;
-    height: 60%;
-    width: 70%;
-    float: center;
-    padding: 10px;
-    color: #FFFF00;
-    text-align: center;
-}
-.answer h1 {
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
     color: white;
 }
+
+
+/* Header */
+
 header {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 100;
-    background-color: black;
+    font-family: 'Poppins', Arial;
+    background-color: rgba(0,0,0,0.9);
     color: cyan;
+
     text-align: center;
+
     padding: 20px;
     width: 100%;
-    position: absolute;
-    top: 0; 
+
+    position: fixed;
+    top: 0;
+
+    font-size: 22px;
 }
+
+
+/* Container (same layout as main page) */
+
 .container {
     max-width: 900px;
     width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 20px;
-    flex: 1;
 }
-.hero {
-    min-width: 400px;
-    min-height: 250px;
-    border-radius: 5px;
-    background-color: #FFA500;
-    padding: 20px;
+
+
+/* Word Cloud Result Box */
+
+.answer {
+
+    margin-top: 60px;
+
+    width: 80%;
+    max-width: 1000px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    background: rgba(0,0,0,0.75);
+
     text-align: center;
-}
 
-form {
-    display: inline-block;
-    text-align: left;
-}
-
-textarea {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #010844;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #01084477;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 
-#files {
-    padding: 5px;
-    border: 1px solid black;
+/* Word Cloud Image */
+
+.answer img {
+
+    width: 100%;
+    max-width: 850px;
+
+    border-radius: 10px;
+
 }
 
-.result {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px;
-}
 
-.result h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
+/* Footer */
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 101.5%;
-    position: absolute;
-    bottom: 0; 
-    justify-content: center;
-    margin:0;
-}
 
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+
+    text-align: center;
+
+    padding: 10px;
+
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+
+}

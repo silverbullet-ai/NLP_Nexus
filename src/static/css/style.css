@@ -1,130 +1,220 @@
+/* Reset spacing */
 
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
+
+
+/* Background */
+
 body {
-    background-image: url(bg.jpg);
+    background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+
     font-family: Arial, sans-serif;
+
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    min-height: 97vh;
-    position: relative;
-    max-width: 98.5%;
-    color: white;
-    border: 1% solid black;
-}
-.answer {
-    background-color: black;
-    border: 5px solid white;
-    height: 50%;
-    width: 65%;
-    float: center;
-    padding: 10px;
-    color: #FFFF00;
-    text-align: center;
-}
-.answer h1 {
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
     color: white;
 }
+
+
+/* Header */
+
 header {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 100;
-    background-color: black;
+    background-color: rgba(0,0,0,0.9);
     color: cyan;
+
     text-align: center;
+
     padding: 20px;
     width: 100%;
-    position: absolute;
-    top: 0; 
+
+    position: fixed;
+    top: 0;
+
+    font-size: 22px;
 }
-.container {
-    max-width: 900px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 20px;
-    flex: 1;
-}
+
+
+/* Main form box */
+
 .hero {
-    min-width: 400px;
-    min-height: 250px;
-    border-radius: 5px;
-    background-color: #FFA500;
-    padding: 20px;
+
+    min-width: 420px;
+    min-height: 260px;
+
+    margin-top: 120px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    background: rgba(0,0,0,0.65);
+
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
     text-align: center;
 }
+
+
+/* Form alignment */
 
 form {
     display: inline-block;
     text-align: left;
 }
 
+
+/* Text area */
+
 textarea {
+
     width: 95%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+
+    margin-bottom: 12px;
+
+    border-radius: 6px;
+    border: none;
+
+    background: rgba(255,255,255,0.9);
+
+    resize: none;
+
 }
+
+
+/* File input box */
+
 .box {
-    border: 1px solid black;
-    border-radius: 2px;
+    border-radius: 6px;
+    padding: 6px;
 }
+
+
+/* Dropdown */
 
 select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+    padding: 8px;
+    border-radius: 6px;
+
+    border: none;
+
+    margin-top: 10px;
 }
 
+
+/* Button */
+
 input[type="submit"] {
+
     padding: 10px 20px;
-    background-color: #010844;
+
+    margin-top: 12px;
+
+    background: #0d6efd;
+
     color: white;
+
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+
     cursor: pointer;
+
+    font-size: 15px;
+
 }
 
 input[type="submit"]:hover {
-    background-color: #01084477;
+
+    background: #0a58ca;
+
 }
 
 
-#files {
-    padding: 5px;
+/* Result box */
+
+.answer {
+
+    background: rgba(0,0,0,0.75);
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    width: 70%;
+    max-width: 900px;
+
+    margin-top: 150px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
 }
 
-.result {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px;
-}
 
-.result h2 {
-    font-size: 24px;
+/* Result title */
+
+.answer h1 {
+
+    color: cyan;
+
     margin-bottom: 15px;
-    color: #333;
+
 }
+
+
+/* Result text */
+
+.answer p {
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    text-align: justify;
+    text-indent: 20px;
+
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    word-wrap: break-word;
+
+}
+
+
+/* Footer */
 
 footer {
-    background-color: #333;
-    color: #fff;
+
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+
     text-align: center;
+
     padding: 10px;
-    width: 101.5%;
+
+    width: 100%;
+
     position: fixed;
-    bottom: 0; 
-    justify-content: center;
-    margin:0;
+
+    bottom: 0;
 
 }
