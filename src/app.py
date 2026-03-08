@@ -2,7 +2,11 @@ from flask import Flask, render_template, request
 from summarizer import text_summarize, sentiment_analysis, word_cloud
 from pdf_extractor import extract_text_from_pdf
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="templates",
+    static_folder="static"
+)
 
 
 @app.route("/")
