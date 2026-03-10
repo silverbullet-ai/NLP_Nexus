@@ -166,6 +166,7 @@ This project was developed and tested using:
 Python **3.11**
 
 Using Python 3.11 is recommended for compatibility with the dependencies.
+
 ---
 
 ⭐ If you like this project, consider giving it a star on GitHub!
