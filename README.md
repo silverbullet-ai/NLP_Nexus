@@ -75,10 +75,14 @@ py -3.11 -m venv venv
 ```
 Activate it:
 
-Windows
-
+Windows (PowerShell / Command Prompt / Windows Terminal)
 ```bash
 venv\Scripts\activate
+```
+
+Git Bash
+```bash
+source venv/Scripts/activate
 ```
 
 Linux / macOS
