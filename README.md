@@ -56,6 +56,7 @@ A simple and interactive UI built with **Flask** for easy text analysis.
 
 ```bash
 git clone https://github.com/silverbullet-ai/NLP_Nexus.git
+```bash
 cd NLP_Nexus
 ```
 ---
@@ -65,7 +66,10 @@ cd NLP_Nexus
 ```bash
 python -m venv venv
 ```
-
+or
+```bash
+py -3.11 -m venv venv
+```
 Activate it:
 
 Windows
@@ -91,7 +95,9 @@ pip install -r requirements.txt
 
 ```bash
 python -m nltk.downloader punkt
+```bash
 python -m nltk.downloader stopwords
+```bash
 python -m nltk.downloader vader_lexicon
 ```
 ---
@@ -136,6 +142,7 @@ NLP_Nexus
 │           ├── bg.jpg
 │           └── icons.jpg
 │
+├── .gitignore                # Git ignored files
 ├── requirements.txt
 └── README.md
 ```
