@@ -157,6 +157,7 @@ NLP_Nexus
 ├── LICENSE                   # MIT License
 ├── requirements.txt
 └── README.md
+```
 ---
 
 ## 🔮 Future Improvements (v2)
