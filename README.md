@@ -169,7 +169,7 @@ NLP_Nexus
 
 ## 👨‍💻 Author
 
-**Aahish**
+**silverbullet-ai(Aahish)**
 
 GitHub: https://github.com/silverbullet-ai
 
