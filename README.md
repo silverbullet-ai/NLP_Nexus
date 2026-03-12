@@ -1,6 +1,13 @@
 
 # 🧠 NLP Nexus
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_App-green)
+![NLP](https://img.shields.io/badge/NLP-Text_Analysis-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+NLP Nexus is a Natural Language Processing (NLP) web application designed to simplify text analysis and document understanding.
+
 NLP Nexus is a **Natural Language Processing (NLP) web application** designed to simplify text analysis and document understanding.
 It allows users to summarize large text documents, perform sentiment analysis, and visualize text data using word clouds.
 
@@ -188,3 +195,9 @@ Using Python 3.11 is recommended for compatibility with the dependencies.
 ---
 
 ⭐ If you like this project, consider giving it a star on GitHub!
+
+---
+
+## License
+
+This project is licensed under the MIT License.
