@@ -6,8 +6,6 @@
 ![NLP](https://img.shields.io/badge/NLP-Text_Analysis-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-NLP Nexus is a Natural Language Processing (NLP) web application designed to simplify text analysis and document understanding.
-
 NLP Nexus is a **Natural Language Processing (NLP) web application** designed to simplify text analysis and document understanding.
 It allows users to summarize large text documents, perform sentiment analysis, and visualize text data using word clouds.
 
