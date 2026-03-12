@@ -134,7 +134,7 @@ http://127.0.0.1:5000
 ```bash
 NLP_Nexus
 │
-├── src
+├── src	                       # Application source code
 │   ├── app.py                # Flask application
 │   ├── summarizer.py         # NLP processing logic
 │   ├── pdf_extractor.py      # PDF text extraction
@@ -154,10 +154,9 @@ NLP_Nexus
 │           └── icons.jpg
 │
 ├── .gitignore                # Git ignored files
+├── LICENSE                   # MIT License
 ├── requirements.txt
 └── README.md
-```
-
 ---
 
 ## 🔮 Future Improvements (v2)
