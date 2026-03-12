@@ -167,16 +167,6 @@ NLP_Nexus
 ```
 ---
 
-## 🔮 Future Improvements (v2)
-
-- Download generated word clouds
-- Copy summary button
-- Improved NLP models
-- More visualizations
-- Enhanced UI/UX
-
----
-
 ## 👨‍💻 Author
 
 **Aahish**
