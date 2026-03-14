@@ -12,6 +12,20 @@ The application provides a simple web interface where users can paste text or up
 
 ---
 
+## 📑 Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Running the Application](#️-running-the-application)
+- [Project Structure](#-project-structure)
+- [Future Improvements](#-future-improvements)
+- [Author](#-author)
+- [Python Version](#-python-version)
+- [License](#-license)
+
+---
+
 ## 🚀 Features
 
 ### 📄 Text Summarization
