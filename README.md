@@ -197,7 +197,9 @@ Using Python 3.11 is recommended for compatibility with the dependencies.
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License**.  
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
